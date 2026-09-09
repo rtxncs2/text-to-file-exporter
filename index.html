@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to File Exporter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Text to File Exporter</h1>
+        <p class="subtitle">Export your text as a .txt file (Max 1MB)</p>
+        
+        <div class="content">
+            <textarea id="textInput" placeholder="Enter your text here... (Max 1MB)" maxlength="1048576"></textarea>
+            
+            <div class="info-box">
+                <span id="charCount">0</span> / <span id="maxChars">1,048,576</span> characters
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            
+            <input 
+                type="text" 
+                id="fileName" 
+                placeholder="Enter filename (without .txt)" 
+                value="document"
+            >
+            
+            <button id="exportBtn" class="export-btn">Download .txt File</button>
+        </div>
+        
+        <footer>
+            <p>Built with ❤️ | Max file size: 1MB</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
